@@ -1,0 +1,25 @@
+{
+    "routes": [
+      {
+        "src": "/",
+        "dest": "/"
+      },
+      {
+        "src": "/members",
+        "dest": "/"
+      },
+      {
+        "src": "/files",
+        "dest": "/"
+      },
+      {
+        "src": "/gallery",
+        "dest": "/"
+      },
+      {
+        "src": "/.*",
+        "dest": "/"
+      }
+    ]
+  }
+  
