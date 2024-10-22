@@ -1,11 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-
-
-
 // next.config.mjs
-export default {
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -16,6 +12,8 @@ export default {
     ],
   },
 };
+
+export default nextConfig;
 
 
   
