@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "UNE KON FASANE WALA",
-  description: "Our Official Website",
+  description: "Den of the Warriors!",
 };
 
 export default function RootLayout({
