@@ -215,7 +215,7 @@ export default function Home() {
                 <span className="mx-8">|</span> 
                 Notice 2: BOARDS is Coming!!! 
                 <span className="mx-8">|</span> 
-                Notice 3: ARKA'S Birthday is Coming!!!
+                Notice 3: ARKA, Your Birthday is Coming!!!
               </p>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function Home() {
                   <h3 className="text-2xl font-bold">{member.name}</h3>
                   <p className="mt-2 text-gray-400">{member.details}</p>
                   <Dialog>
-                    <DialogTrigger asChild>
+                    <DialogTrigger>
                       <Button
                         variant="outline"
                         className="mt-4 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white hover:from-yellow-500 hover:to-pink-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 shadow-lg"
@@ -325,7 +325,14 @@ export default function Home() {
        {/* Gallery Section */}
 <section id="gallery" ref={galleryRef} className="py-12 bg-gray-900 rounded-xl my-6 mx-4">
   <div className="container mx-auto px-4 text-center">
-    <h2 className="text-4xl font-bold mb-8">Group Memories</h2>
+    <motion.h2
+      className="text-4xl font-bold mb-8"
+      initial={{ opacity: 0, y: 20 }}
+      animate={galleryInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5 }}
+    >
+      Group Memories
+    </motion.h2>
     <div className="relative flex items-center justify-center">
       
        {/* Previous Image Button */}
