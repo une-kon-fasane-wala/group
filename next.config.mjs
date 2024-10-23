@@ -3,6 +3,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
+        hostname: 'i.imgur.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'drive.google.com',
         pathname: '/uc**',
       },
@@ -16,6 +21,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-
-
-  

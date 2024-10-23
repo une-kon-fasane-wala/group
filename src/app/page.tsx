@@ -11,34 +11,34 @@ import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/fre
 import Head from 'next/head';  // Import the Head component
 
 const members = [
-  { name: 'Koustav', photo: 'https://drive.google.com/uc?export=view&id=1F4yZ87gc-vQHMM51RBw0n3VmTlZ-g3SL', details: 'Student, Loves Nature' },
-  { name: 'Arghyadeep', photo: 'https://drive.google.com/uc?export=view&id=1i7OGve5iSeTdzTSrGNA5CF7GzG_yQA3C', details: 'Student, Enthusiast' },
-  { name: 'Ashwas', photo: 'https://drive.google.com/uc?export=view&id=1p3nsUbc-dv-tFlVVs1Z4D84Vqm8Wwm8B', details: 'Student, KFC Lover' },
-  { name: 'Sanai', photo: 'https://drive.google.com/uc?export=view&id=1RJlILAZYtEz6qmF2l0RCyK3HPwh-jEYS', details: 'Student, Loves Simplicity' },
-  { name: 'Arka', photo: 'https://drive.google.com/uc?export=view&id=1Ftr6AYZqJQkhcSsDhQTf1sLWRH924ZYL', details: 'Student, Would Be Entrepreneur' },
-  { name: 'Shreyas', photo: 'https://drive.google.com/uc?export=view&id=1QLsattS0zU6AiJJ7LpA64nmhpYrqCHs4', details: 'Student, Stock Market Lover' },
-  { name: 'Sounak', photo: 'https://drive.google.com/uc?export=view&id=18Vkl-te3P7Cz8R1lTQGsqiN743XjOtdK', details: 'Student, Anime Aficionado' },
-  { name: 'Saikat', photo: 'https://drive.google.com/uc?export=view&id=1IE9ED3LLMcMlS-9-E7onvewTp3vSfz_T', details: 'Student, Deep Thinker' },
-  { name: 'Aishik', photo: 'https://drive.google.com/uc?export=view&id=1RCp9GeBCxXn9iJnKVhAltbOWEHCKeoQs', details: 'Student, Cool Guy' }
+  { name: 'Koustav', photo: 'https://i.imgur.com/YQE9nMS.jpeg', details: 'Student, Loves Nature' },
+  { name: 'Arghyadeep', photo: 'https://i.imgur.com/MRPCFBc.jpeg', details: 'Student, Enthusiast' },
+  { name: 'Ashwas', photo: 'https://i.imgur.com/xPaDKo9.jpeg', details: 'Student, KFC Lover' },
+  { name: 'Sanai', photo: 'https://i.imgur.com/ejDO0E5.jpeg', details: 'Student, Loves Simplicity' },
+  { name: 'Arka', photo: 'https://i.imgur.com/j9XybpE.jpeg', details: 'Student, Would Be Entrepreneur' },
+  { name: 'Shreyas', photo: 'https://i.imgur.com/f8LmeR9.jpeg', details: 'Student, Stock Market Lover' },
+  { name: 'Sounak', photo: 'https://i.imgur.com/tNajXy8.jpeg', details: 'Student, Anime Aficionado' },
+  { name: 'Saikat', photo: 'https://i.imgur.com/YL4sqdn.jpeg', details: 'Student, Deep Thinker' },
+  { name: 'Aishik', photo: 'https://i.imgur.com/7OZmpFt.jpeg', details: 'Student, Cool Guy' }
 ];
 
 const files = [
-  { name: 'KOUSTAV_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1mXtej9p1gvBTn1ALLblXtE6XkYoCby7u', preview: 'https://drive.google.com/uc?export=download&id=1LckAQnEpSChG-7hGuy--7KVVlhFz2lK6' },
-  { name: 'ARGHYADEEP_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=13wwngdnw25sTijAwdq8dv_K-RhqWE45a', preview: 'https://drive.google.com/uc?export=download&id=1LckAQnEpSChG-7hGuy--7KVVlhFz2lK6' },
-  { name: 'ASHWAS_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1j0HoSPxBd36SCSRHon1bUGBnDJfxiPAT', preview: 'https://drive.google.com/uc?export=download&id=1LckAQnEpSChG-7hGuy--7KVVlhFz2lK6' },
-  { name: 'SANAI_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=176LsWrb-q3b7neu6--QtjSCzb5WIas68', preview: 'https://drive.google.com/uc?export=download&id=1LckAQnEpSChG-7hGuy--7KVVlhFz2lK6' },
-  { name: 'ARKA_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1hoGVUifm3p1vwllpJfZ0hkZ3eKrKYe4Y', preview: 'https://drive.google.com/uc?export=download&id=1LckAQnEpSChG-7hGuy--7KVVlhFz2lK6' },
-  { name: 'SHREYAS_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1ReSDUNKBNV7SI1H0TYq1Botm9elvyqLp', preview: 'https://drive.google.com/uc?export=download&id=1LckAQnEpSChG-7hGuy--7KVVlhFz2lK6' },
-  { name: 'SOUNAK_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=194F7tK5zvltz-lfLyLNx8zIZ_3V5HgEJ', preview: 'https://drive.google.com/uc?export=download&id=1LckAQnEpSChG-7hGuy--7KVVlhFz2lK6' },
-  { name: 'AISHIK_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1GK8IwonDV1IXCNsnvGvW_vomzq16aABN', preview: 'https://drive.google.com/uc?export=download&id=1LckAQnEpSChG-7hGuy--7KVVlhFz2lK6' }
+  { name: 'KOUSTAV_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1mXtej9p1gvBTn1ALLblXtE6XkYoCby7u', preview: 'https://i.imgur.com/b1WYfFF.png' },
+  { name: 'ARGHYA_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=13wwngdnw25sTijAwdq8dv_K-RhqWE45a', preview: 'https://i.imgur.com/b1WYfFF.png' },
+  { name: 'ASHWAS_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1j0HoSPxBd36SCSRHon1bUGBnDJfxiPAT', preview: 'https://i.imgur.com/b1WYfFF.png' },
+  { name: 'SANAI_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=176LsWrb-q3b7neu6--QtjSCzb5WIas68', preview: 'https://i.imgur.com/b1WYfFF.png' },
+  { name: 'ARKA_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1hoGVUifm3p1vwllpJfZ0hkZ3eKrKYe4Y', preview: 'https://i.imgur.com/b1WYfFF.png' },
+  { name: 'SHREYAS_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1ReSDUNKBNV7SI1H0TYq1Botm9elvyqLp', preview: 'https://i.imgur.com/b1WYfFF.png' },
+  { name: 'SOUNAK_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=194F7tK5zvltz-lfLyLNx8zIZ_3V5HgEJ', preview: 'https://i.imgur.com/b1WYfFF.png' },
+  { name: 'AISHIK_FRONT_PAGE', url: 'https://drive.google.com/uc?export=download&id=1GK8IwonDV1IXCNsnvGvW_vomzq16aABN', preview: 'https://i.imgur.com/b1WYfFF.png' }
 ];
 
 const galleryImages = [
-  'https://drive.google.com/uc?export=view&id=1DqbuRdLR-psTXBzsNDsJbW37WK1HfBam',
-  'https://drive.google.com/uc?export=view&id=1WLEUu-nRDX3Ff7QFKOb_OWhFai9RyLPC',
-  'https://drive.google.com/uc?export=view&id=1UtOcSJUvR1O9F5XJa91fvaFrz63gc7SI',
-  'https://drive.google.com/uc?export=view&id=1KJkfJuTHcxbquU8N6-TckOcAlxqwgqdo',
-  'https://drive.google.com/uc?export=view&id=1UD3gk98HcJVnkXFGSjumz5MRbphm_iZS',
+  'https://i.imgur.com/pVxtH2u.jpeg',
+  'https://i.imgur.com/l2S72eJ.jpeg',
+  'https://i.imgur.com/3rY8N3Z.jpeg',
+  'https://i.imgur.com/xXHqxzp.jpeg',
+  'https://i.imgur.com/7JsZDnZ.jpeg'
 ];
 
 export default function Home() {
@@ -46,7 +46,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
   const [currentImageIndex, setCurrentImageIndex] = useState(0); // Gallery state
   const [heroRef, heroInView] = useInView({ threshold: 0.3, triggerOnce: true });
-  const [membersRef, membersInView] = useInView({ threshold: 0.2, triggerOnce: true });
+  const [membersRef, membersInView] = useInView({ threshold: 0.1, triggerOnce: true });
   const [filesRef, filesInView] = useInView({ threshold: 0.2, triggerOnce: true });
   const [galleryRef, galleryInView] = useInView({ threshold: 0.2, triggerOnce: true });
 
@@ -57,7 +57,7 @@ export default function Home() {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          return rect.top <= 100 && rect.bottom >= 100;
+          return rect.top <= 200 && rect.bottom >= 50; // Adjusted offset for mobile compatibility
         }
         return false;
       });
@@ -92,15 +92,15 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-    {/* Meta tags using Head */}
-    <Head>
+      {/* Meta tags using Head */}
+      <Head>
         <title>UNE KON FASANE WALA</title>
         <meta name="description" content="A modern and advanced group website where you can stay connected and share moments." />
         <meta name="keywords" content="UNE KON FASANE WALA, UNEKONFASANEWALA, UNEKON FASANEWALA, group, members, files, gallery, connect, collaboration" />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="UNE KON FASANE WALA - Group Website" />
         <meta property="og:description" content="Stay connected and share your best memories with the group." />
-        <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1wql9E99_b09ysH5HVeDF08Oq0Crvb8sr" />  {/* Image for social sharing */}
+        <meta property="og:image" content="/images/social-sharing.jpg" />  {/* Image for social sharing */}
         <meta property="og:url" content="http://localhost:3000" />  {/* Your actual URL */}
         <meta property="og:type" content="website" />
 
@@ -108,7 +108,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="UNE KON FASANE WALA - Group Website" />
         <meta name="twitter:description" content="Stay connected and share your best memories with the group." />
-        <meta name="twitter:image" content="https://drive.google.com/uc?export=view&id=1wql9E99_b09ysH5HVeDF08Oq0Crvb8sr" />
+        <meta name="twitter:image" content="/images/social-sharing.jpg" />
       </Head>
       <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-80 backdrop-blur-md rounded-b-lg">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -187,7 +187,7 @@ export default function Home() {
               Stay Connected, Share Moments
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
-            ❤ Welcome to our Official Website ❤
+              ❤ Welcome to our Official Website ❤
               <br />
               ~ Simplified Sharing for Enhanced Collaboration ~
             </p>
@@ -212,9 +212,9 @@ export default function Home() {
             <div className="overflow-hidden bg-gray-700 rounded-lg p-4">
               <p className="animate-marquee whitespace-nowrap text-lg">
                 Notice 1: NEET 2025 is Coming!!!
-                <span className="mx-8">|</span> 
-                Notice 2: BOARDS is Coming!!! 
-                <span className="mx-8">|</span> 
+                <span className="mx-8">|</span>
+                Notice 2: BOARDS is Coming!!!
+                <span className="mx-8">|</span>
                 Notice 3: ARKA, Your Birthday is Coming!!!
               </p>
             </div>
@@ -247,6 +247,7 @@ export default function Home() {
                     className="w-full h-48 object-cover rounded-lg mb-4"
                     width={400}
                     height={300}
+                    layout="responsive"
                   />
                   <h3 className="text-2xl font-bold">{member.name}</h3>
                   <p className="mt-2 text-gray-400">{member.details}</p>
@@ -305,6 +306,7 @@ export default function Home() {
                     className="w-full h-48 object-cover rounded-lg mb-4"
                     width={400}
                     height={300}
+                    layout="responsive"
                   />
                   <h3 className="text-2xl font-bold">{file.name}</h3>
                   <Button
@@ -321,74 +323,63 @@ export default function Home() {
           </div>
         </section>
 
-       {/* Gallery Section */}
-<section id="gallery" ref={galleryRef} className="py-12 bg-gray-900 rounded-xl my-6 mx-4">
-  <div className="container mx-auto px-4 text-center">
-    <motion.h2
-      className="text-4xl font-bold mb-8"
-      initial={{ opacity: 0, y: 20 }}
-      animate={galleryInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5 }}
-    >
-      Group Memories
-    </motion.h2>
-    <div className="relative flex items-center justify-center">
-      
-       {/* Previous Image Button */}
-<motion.button
-  onClick={prevImage}
-  className="gallery-nav-button absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-purple-500 hover:bg-purple-700 p-3 rounded-full shadow-lg transition-transform focus:outline-none focus:ring-4 focus:ring-purple-500"
-  whileHover={{ scale: 1.05, y: "-10%" }}
-  whileTap={{ scale: 0.95 }}
-  transition={{ type: "spring", stiffness: 300, damping: 20 }}
->
-  <ChevronLeft className="w-6 h-6 text-white" />
-</motion.button>
+        {/* Gallery Section */}
+        <section id="gallery" ref={galleryRef} className="py-12 bg-gray-900 rounded-xl my-6 mx-4">
+          <div className="container mx-auto px-4 text-center">
+            <motion.h2
+              className="text-4xl font-bold mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={galleryInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5 }}
+            >
+              Group Memories
+            </motion.h2>
+            <div className="relative flex items-center justify-center">
+              {/* Previous Image Button */}
+              <motion.button
+                onClick={prevImage}
+                className="gallery-nav-button absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-purple-500 hover:bg-purple-700 p-3 rounded-full shadow-lg transition-transform focus:outline-none focus:ring-4 focus:ring-purple-500"
+                whileHover={{ scale: 1.05, y: "-10%" }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              >
+                <ChevronLeft className="w-6 h-6 text-white" />
+              </motion.button>
 
-
-
-
-
-
-      {/* Image with Transition */}
-      <div className="w-full h-96 relative overflow-hidden rounded-2xl">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentImageIndex}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.5 }}
-            className="absolute inset-0"
-          >
-            <Image
-              src={galleryImages[currentImageIndex]}
-              alt={`Gallery Image ${currentImageIndex + 1}`}
-              // Applied border-radius
-              className="w-full h-full object-contain rounded-2xl"
-              width={600}
-              height={400}
-            />
-          </motion.div>
-        </AnimatePresence>
-      </div>
-       {/* Next Image Button */}
-<motion.button
-  onClick={nextImage}
-  className="gallery-nav-button absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-purple-500 hover:bg-purple-700 p-3 rounded-full shadow-lg transition-transform focus:outline-none focus:ring-4 focus:ring-purple-500"
-  whileHover={{ scale: 1.05, y: "-10%" }}
-  whileTap={{ scale: 0.95 }}
-  transition={{ type: "spring", stiffness: 300, damping: 20 }}
->
-  <ChevronRight className="w-6 h-6 text-white" />
-</motion.button>
-
-        
-    </div>
-  </div>
-</section>
-
-
+              {/* Image with Transition */}
+              <div className="w-full h-96 relative overflow-hidden rounded-2xl">
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={currentImageIndex}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ duration: 0.5 }}
+                    className="absolute inset-0"
+                  >
+                    <Image
+                      src={galleryImages[currentImageIndex]}
+                      alt={`Gallery Image ${currentImageIndex + 1}`}
+                      className="w-full h-full object-contain rounded-2xl"
+                      width={600}
+                      height={400}
+                    />
+                  </motion.div>
+                </AnimatePresence>
+              </div>
+              {/* Next Image Button */}
+              <motion.button
+                onClick={nextImage}
+                className="gallery-nav-button absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-purple-500 hover:bg-purple-700 p-3 rounded-full shadow-lg transition-transform focus:outline-none focus:ring-4 focus:ring-purple-500"
+                whileHover={{ scale: 1.05, y: "-10%" }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              >
+                <ChevronRight className="w-6 h-6 text-white" />
+              </motion.button>
+            </div>
+          </div>
+        </section>
       </main>
       <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-12 rounded-t-3xl">
         <div className="container mx-auto px-4 text-center">
