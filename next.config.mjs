@@ -1,6 +1,3 @@
-// next.config.mjs
-
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -8,6 +5,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'drive.google.com',
         pathname: '/uc**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com',
+        pathname: '/file/d/**',
       },
     ],
   },
