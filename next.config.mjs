@@ -17,6 +17,7 @@ const nextConfig = {
         pathname: '/file/d/**',
       },
     ],
+    unoptimized: true,
   },
 };
 
