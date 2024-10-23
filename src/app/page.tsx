@@ -259,7 +259,6 @@ export default function Home() {
                         View Profile
                       </Button>
                     </DialogTrigger>
-
                     <DialogContent className="bg-gray-800 text-white rounded-lg">
                       <DialogHeader>
                         <DialogTitle>{member.name}</DialogTitle>

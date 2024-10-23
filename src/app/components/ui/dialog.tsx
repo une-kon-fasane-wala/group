@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
 
+// Interface for Dialog props
+interface DialogChildProps {
+  openDialog: () => void;
+  closeDialog: () => void;
+  isOpen: boolean;
+}
+
 export const Dialog = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -10,7 +17,11 @@ export const Dialog = ({ children }: { children: React.ReactNode }) => {
   // Clone children to pass open and close functions to the trigger and content
   const clonedChildren = React.Children.map(children, (child) => {
     if (React.isValidElement(child)) {
-      return React.cloneElement(child, { openDialog, closeDialog, isOpen });
+      return React.cloneElement(child as React.ReactElement<Partial<DialogChildProps>>, {
+        openDialog,
+        closeDialog,
+        isOpen,
+      });
     }
     return child;
   });
@@ -18,6 +29,7 @@ export const Dialog = ({ children }: { children: React.ReactNode }) => {
   return <>{clonedChildren}</>;
 };
 
+// Updated DialogTrigger component
 export const DialogTrigger = ({
   children,
   openDialog,
@@ -32,6 +44,7 @@ export const DialogTrigger = ({
   );
 };
 
+// Updated DialogContent component
 export const DialogContent = ({
   children,
   className = '',
@@ -59,14 +72,17 @@ export const DialogContent = ({
   );
 };
 
+// DialogHeader component
 export const DialogHeader = ({ children }: { children: React.ReactNode }) => {
   return <div className="mb-4">{children}</div>;
 };
 
+// DialogTitle component
 export const DialogTitle = ({ children }: { children: React.ReactNode }) => {
   return <h2 className="text-2xl font-bold">{children}</h2>;
 };
 
+// DialogClose component
 export const DialogClose = ({ onClose }: { onClose?: () => void }) => {
   return (
     <button onClick={onClose} className="absolute top-2 right-2">
