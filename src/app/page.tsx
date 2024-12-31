@@ -408,7 +408,7 @@ export default function Home() {
           </div>
           {/* Footer Copy */}
           <p className="text-sm text-gray-400">
-            &copy; 2024 Crafted by Koustav Ghosh ❤ All rights reserved.
+            &copy; 2025 Crafted by Koustav Ghosh ❤ All rights reserved.
           </p>
         </div>
       </footer>
