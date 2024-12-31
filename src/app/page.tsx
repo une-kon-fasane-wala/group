@@ -211,10 +211,10 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-2 text-purple-400">Recent Notices</h2>
             <div className="overflow-hidden bg-gray-700 rounded-lg p-4">
               <p className="animate-marquee whitespace-nowrap text-lg">
-                Notice 1: NEET 2025 is Coming!!!
+                HAPPY NEW YEAR 2025 🥳🎊🥳
                 <span className="mx-8">|</span>
-                Notice 2: BOARDS is Coming!!!
-                <span className="mx-8">|</span>
+                NEET 2025 is Coming!!!
+                <span className="mx-8"></span>
               </p>
             </div>
           </div>
