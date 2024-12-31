@@ -215,7 +215,6 @@ export default function Home() {
                 <span className="mx-8">|</span>
                 Notice 2: BOARDS is Coming!!!
                 <span className="mx-8">|</span>
-                Notice 3: ARKA, Your Birthday is Coming!!!
               </p>
             </div>
           </div>
